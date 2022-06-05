@@ -1,0 +1,314 @@
+
+body{
+    background-color: #e5e5e5;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.top {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.vertical-line{
+    height: 22px;
+    margin: 0 10px;
+    border: blue 1px solid;
+}
+
+.search-bar input{
+    height: 28px;
+    width: 215px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #DBDBDB;
+    color: #979797;
+    font-size: 12px;
+}
+
+.top-icons{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    background-color:blue;
+}
+
+.top-icons ion-icon{
+    font-size: 22px;
+    margin-right: 20px;
+}
+.top-icons ion-icon:nth-child(4){
+    margin-right: 0px;
+}
+
+.feed {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 54px;
+    left: 215px;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.stories{    
+    margin-top: 88px;
+    margin-bottom: 24px;
+    width: 614px;
+    height:118px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #DBDBDB;
+    box-sizing: border-box;
+}
+.stories .story:nth-child(1){
+    margin-left:24px;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 14px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.story img{
+    width: 66px;
+    height: 66px;
+}
+
+.story .user-logo{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.story .user-name{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    height: 19px;
+    font-size: 12px;
+}
+
+.user-logo img{
+    width: 56px;
+    height: 56px;
+}
+
+.arrow {
+    position: absolute;
+    top: 18px;
+    left: -5px;
+    font-size: 32px;
+    z-index: 3;
+    color: #FFFFFF ;
+    text-shadow: 60px -16px green;
+}
+
+.post{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 614px;
+    border: 2px solid ;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+
+}
+
+.post .info {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post .info .op{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-left: 17px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.op .op-name{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.info .dots{
+    margin-right: 17px;
+    font-size: 16px;
+}
+
+.post .bottom{
+    margin: 0 17px;
+    margin-top: 10px;
+}
+
+.bottom .post-icons{
+    height: 30px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-icons .left-icons{
+    margin-right: 14px;
+}
+
+.bottom .comments{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.comments .follow-image{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+.follow-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.comments .comment-message{
+    font-size: 14px; 
+}
+
+.sidebar{
+    background-color: green;
+    margin-left: 38px;
+    width: 293px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar .user{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.user .user-info{
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.user-info .username{
+    font-weight: bold;
+}
+
+.user-info .name{
+    color: #8E8E8E;
+}
+
+.sidebar .suggestion-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    font-size: 12px;
+}
+
+.suggestion-text .recommended{
+    color: #8E8E8E;
+}
+
+.suggestion-text .for-you{
+    font-weight: bold;
+}
+
+.sidebar .suggestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.suggestion-user{
+    display: flex;
+    align-items: center;
+}
+
+.suggestion-user .user-info{
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+.user-info .username{
+    font-weight: bold;
+}
+
+.user-info .name{
+    color: #8E8E8E;
+}
+
+.suggestion .follow {
+    font-size: 12px;
+    color: #139EF2;
+}
+
+.suggestion:nth-child(7){
+    margin-bottom: 0px;
+}
+
+.sidebar .help-text{
+    margin-top: 33px;
+    margin-bottom: 18px;
+    font-size: 11px;
+    color: #C7C7C7;
+}
+
+.sidebar .trademark{
+    font-size: 11px;
+    color: #C7C7C7;
+}
+
+@media(max-width:935px){
+    .sidebar{
+        display: none;
+    }
+    .feed{
+        position: static;
+    }
+}
+
+/*fix top*/
